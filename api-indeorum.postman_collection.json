@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "79f7f97a-17f9-4fdd-9565-8148df954f7c",
+		"name": "api-indeorum",
+		"description": "API que retorna Posts e Comments\n\n/posts\nRetorna todos os [Posts] com o meta [commentsCount] contando quantos comments cada post possui.\n\n/posts?sort=title\nRetorna todos os [Posts] ordenados em ordem alfabética a partir do [Title].\n\n/posts?include=comments&fields[comments]=name,message\nRetorna todos os [Posts] com todos os [Comments].\n\n/populate\nGera 5 novos [Posts] com uma quantidade aleatória de [Comments]",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				},
+				"description": "Retorna todos os posts"
+			},
+			"response": []
+		},
+		{
+			"name": "/posts?sort=title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/posts?sort=title",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "title"
+						}
+					]
+				},
+				"description": "Retorna todos os posts ordenados por [title]"
+			},
+			"response": []
+		},
+		{
+			"name": "/posts?include=comments&fields[comments]=name,message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/posts?include=comments&fields[comments]=name,message",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "include",
+							"value": "comments"
+						},
+						{
+							"key": "fields[comments]",
+							"value": "name,message"
+						}
+					]
+				},
+				"description": "Retorna todos os posts com seus [comments]"
+			},
+			"response": []
+		},
+		{
+			"name": "/populate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/populate",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"populate"
+					]
+				},
+				"description": "Popula o banco com 5 novos posts e os retorna"
+			},
+			"response": []
+		}
+	]
+}

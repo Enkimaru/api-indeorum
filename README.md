@@ -52,7 +52,7 @@ Retorna uma lista de Posts e seus respectivos Comments e também é possível po
     ```
 <!-- USAGE EXAMPLES -->
 ## Utilização
-Existem as seguntes rotas:
+Existem as seguntes rotas [GET}:
   
 * /populate
   ```

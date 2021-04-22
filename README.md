@@ -35,21 +35,21 @@ Retorna uma lista de Posts e seus respectivos Comments e também é possível po
     password: 
   ```
 2. Após os dados serem configurados, deve-se criar a database no PostgreSQL
-  ```
-  rails db:create
-  ```
+    ```
+    rails db:create
+    ```
 3. E criar as tabelas na banco
-  ```
-  rails db:migrate
-  ```
+    ```
+    rails db:migrate
+    ```
 4. Caso queira popular o banco com Posts e Comments, existe o arquivo seed para isso
-  ```
-  rails db:seed
-  ```
+    ```
+    rails db:seed
+    ```
 5. Depois de tudo configurado é só iniciar o server
-  ```
-  rails s
-  ```
+    ```
+    rails s
+    ```
 <!-- USAGE EXAMPLES -->
 ## Utilização
 Existem as seguntes rotas:
@@ -65,7 +65,6 @@ Existem as seguntes rotas:
 * /posts?sort=title
   ```
   Retorna todos os posts ordenados por [Title]
-
   ```
 * /posts?include=comments&fields[comments]=name,message
   ```

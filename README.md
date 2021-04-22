@@ -52,7 +52,7 @@ Retorna uma lista de Posts e seus respectivos Comments e também é possível po
     ```
 <!-- USAGE EXAMPLES -->
 ## Utilização
-Existem as seguntes rotas [GET}:
+Existem as seguntes rotas [GET]:
   
 * /populate
   ```
@@ -69,6 +69,15 @@ Existem as seguntes rotas [GET}:
 * /posts?include=comments&fields[comments]=name,message
   ```
   Retorna todos os [Posts] com seus [Comments]
+  ```
+Existem as seguntes rotas [POST]:
+* /posts
+  ```
+  Cria um novo [Post]
+  ```
+* /comments
+  ```
+  Cria um novo [Comment] relacionado à um [Post] válido
   ```
 
 _O arquivo api-indeorum.postman_collection.json para o Postman com todas as rotasm encontra-se na raiz do projeto._

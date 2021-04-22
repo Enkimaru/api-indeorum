@@ -80,4 +80,4 @@ Existem as seguntes rotas [POST]:
   Cria um novo [Comment] relacionado à um [Post] válido
   ```
 
-_O arquivo api-indeorum.postman_collection.json para o Postman com todas as rotasm encontra-se na raiz do projeto._
+_O arquivo api-indeorum.postman_collection.json para o Postman com todas as rotas encontra-se na raiz do projeto._
